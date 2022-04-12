@@ -371,11 +371,8 @@ void funcmatrix::NodeList::multiply_matrix(int* af1, int* af, NodeList* l)
 							break;
 						}
 						if (temd->data->x == j && temd->data->y == i) {
-							sum += temd->data->value * temp->data->value;
-							if (temd != tail)
-								temd = temd->next;
-							if (temp != l->tail)
-								temp = temp->next;
+							j--;
+							continue;
 						}
 						else if (temp != l->tail)
 							temp = temp->next;
