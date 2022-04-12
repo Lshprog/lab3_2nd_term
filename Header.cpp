@@ -377,7 +377,7 @@ void funcmatrix::NodeList::multiply_matrix(int* af1, int* af, NodeList* l)
 							if (temp != l->tail)
 								temp = temp->next;
 						}
-						if (temp != l->tail)
+						else if (temp != l->tail)
 							temp = temp->next;
 					}
 				}
